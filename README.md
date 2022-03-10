@@ -358,11 +358,28 @@ The app is primarily separated into `API` and `App` component directories, plus 
 If you would rather use a different architecture, the existing code is designed to be adaptable. Concerns are as separated as possible while using pure, tested functions.
 
 
-# Hosting your production app
+# Hosting your production app on Netlify
+
+## Connect your git repository
+
+> This section assumes you have a git repository for your app on either [GitHub](http://github.com/), [GitLab](https://gitlab.com/), [BitBucket](https://bitbucket.org/), or another git provider supported by [Netlify](https://www.netlify.com/).
+
+1. Log into [Netlify](https://www.netlify.com/) (or sign up).
+
+2. Click the [New site from Git](https://app.netlify.com/start) button.
+
+3. Connect your git provider and choose your app's repository.
+
+4. The default settings should work, so you should be able to immediately deploy the site.
+
 
 ## Set the environment variables for your production builds
 
-When building your application, set the following environment variables:
+1. Open the "Site settings" tab in Netlify.
+
+2. Go to the "Environment" section under "Build & Deploy".
+
+3. Click the "Edit variables" button and set the following environment variables:
 
   - `NODE_ENV=production`
 
@@ -377,3 +394,57 @@ When building your application, set the following environment variables:
   - `REACT_APP_WEB_ORIGIN=https://app.your-app.com`
 
 You'll set additional environment variables as needed when following the instructions for setting up features specific to your Molecule.
+
+
+## Rebuilding and redeploying your web app
+
+Your app will be automatically rebuilt and redeployed whenever you push a change to the master/main branch of your git repository. You can manually redeploy at any time by opening the "Deploys" tab selecting "Deploy site" using the "Trigger deploy" button on the right.
+
+After your app has been built and deployed (published), you should be ready to try it out with your production API!
+
+
+## Set up your app's live domain
+
+Netlify gives you a unique random URL as a Netlify subdomain for your app, but you'll probably want to use your own official domain.
+
+1. Open the "Domain management" section of the "Site settings" tab for your app in Netlify.
+
+2. Click the "Add custom domain" button under the "Custom domains" section.
+
+3. Enter your app's domain and click "Verify".
+
+If you already own the domain, you will need to follow Netlify's instructions to verify your domain. Or if it's an unregistered domain, you can register it through Netlify.
+
+See [Netlify's Custom domains](https://docs.netlify.com/domains-https/custom-domains/#assign-a-domain-to-a-site) documentation for more information on adding your domain.
+
+It is recommended that you use Netlify's DNS, as it's easy to use and nice to manage it all in one place. It also greatly simplifies the process of adding SSL (HTTPS) to your web app.
+
+After you've added your domain, scroll down to the "HTTPS" section of the "Domain management" page and ensure that SSL is enabled. If you've recently switched to Netlify's DNS, it could take some time for the changes to propagate before you're able to provision a TLS certificate, but from experience, it usually takes less than an hour.
+
+See [Netlify's HTTPS documentation](https://docs.netlify.com/domains-https/https-ssl/) for more information on enabling (and troubleshooting) SSL.
+
+> Note: You may need to update your API's environment variables to match your domain if it's different than what you originally set on your production API. You'll want to ensure the `APP_DOMAIN` and `APP_ORIGIN` environment variables are correct, otherwise the [CORS configuration](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) will not allow requests to be made from your web app.
+
+
+## Set up a subdomain for your API using Netlify's DNS
+
+> If you're using a different DNS for your domain, you can skip this section. Refer to your domain's DNS provider's documentation.
+
+To add your subdomain(s) to Netlify's DNS:
+
+1. Open the "Domains" tab of your Netlify dashboard.
+
+2. Click your domain.
+
+3. Click the "Add new record" button under "DNS records".
+
+4. Choose the "CNAME" record type.
+
+5. If your desired subdomain is `api.your-app.com`, enter `api` for the name.
+
+6. Your API host should provide a DNS target for you to use as the value.
+
+7. Click the "Save" button.
+
+
+> Note: You may need to update both your app's and API's environment variables to match your domain if it's different than what you originally set. On the API side, you'll want to ensure the `API_ORIGIN` is correct. On the app side (in Netlify), you'll want to ensure the `REACT_APP_API_ORIGIN` is correct.

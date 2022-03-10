@@ -63,3 +63,12 @@ indexHtml = indexHtml.replace(
 )
 
 fs.writeFileSync(indexFilename, indexHtml)
+
+// Update Netlify's _headers file.
+const headersFilename = path.join(__dirname, '../build/_headers')
+const headersContents = fs.readFileSync(headersFilename, `utf8`).replace(
+  /Content-Security-Policy:(.+)?(\r\n|\r|\n)/gmi,
+  `Content-Security-Policy: ${cspContent}; frame-ancestors 'self'\n`
+)
+
+fs.writeFileSync(headersFilename, headersContents)
