@@ -1,10 +1,10 @@
 {
-  "name": "molecule-app",
+  "name": "trip-emissions-app",
   "version": "1.0.0",
   "private": true,
-  "displayName": "Molecule",
+  "displayName": "Trip Emissions",
   "description": "Built with Molecule.dev",
-  "author": "molecule.dev",
+  "author": "Luke Hager",
   "engines": {
     "node": ">=16 <17"
   },

@@ -10,7 +10,7 @@ export type ContainerProps = React.HTMLProps<HTMLDivElement> & {
 /**
  * The main generic element containing the application.
  */
-export const Container = styled(({ store, title = `Molecule`, children, ...props }: ContainerProps) => {
+export const Container = styled(({ store, title = `Trip Emissions`, children, ...props }: ContainerProps) => {
   React.useEffect(() => {
     document.title = title
   }, [ title ])

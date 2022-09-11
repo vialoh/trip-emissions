@@ -5,7 +5,7 @@ const crypto = require('crypto')
 const contentSecurityPolicy = {
   'default-src': [
     `'self'`,
-    `https://www.molecule.dev`,
+    `https://www.trip-emissions.app`,
     process.env.REACT_APP_API_ORIGIN
   ],
   'font-src': [

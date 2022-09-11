@@ -166,7 +166,7 @@ declare namespace NodeJS {
      * I.e., if the `X-Requested-With` header doesn't match the app ID, a cookie is required to help prevent XSRF.
      * The mobile apps do not support cookies.
      *
-     * @example com.your-app.app
+     * @example app.trip-emissions.app
      */
     REACT_APP_ID?: string
 
@@ -194,7 +194,7 @@ declare namespace NodeJS {
     /**
      * The API's origin.
      *
-     * @example https://api.your-app.com
+     * @example https://api.trip-emissions.app
      * @example http://localhost:4000
      */
     REACT_APP_API_ORIGIN?: string
@@ -202,7 +202,7 @@ declare namespace NodeJS {
     /**
      * The web app's origin.
      *
-     * @example https://app.your-app.com
+     * @example https://app.trip-emissions.app
      * @example http://localhost:3000
      */
     REACT_APP_WEB_ORIGIN?: string

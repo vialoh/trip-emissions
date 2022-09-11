@@ -31,8 +31,8 @@ export const About = styled(({ store, fixed, showAboutLink, showInstallButton, .
     <>
       <section { ...props }>
         {showAboutLink && (
-          <a href='https://www.molecule.dev' target='_blank' rel='noopener noreferrer' onClick={handleAnchorClick}>
-            About Molecule
+          <a href='https://www.trip-emissions.app' target='_blank' rel='noopener noreferrer' onClick={handleAnchorClick}>
+            About Trip Emissions
           </a>
         )}
 

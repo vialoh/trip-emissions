@@ -11,8 +11,8 @@ const envCmdrcPath = path.join(rootPath, `.env-cmdrc.json`)
 
 const envFileContents = `NODE_ENV=
 REACT_APP_LOG_LEVEL=
-REACT_APP_ID=com.your-app.app
-REACT_APP_URL_SCHEME=com.your-app.app
+REACT_APP_ID=app.trip-emissions.app
+REACT_APP_URL_SCHEME=app.trip-emissions.app
 REACT_APP_NAME=$npm_package_name
 REACT_APP_VERSION=$npm_package_version
 REACT_APP_PLATFORM=
@@ -38,8 +38,8 @@ const envCmdrcFileContents = JSON.stringify({
   'production': {
     NODE_ENV: 'production',
     GENERATE_SOURCEMAP: false,
-    REACT_APP_API_ORIGIN: 'https://api.your-app.com',
-    REACT_APP_WEB_ORIGIN: 'https://app.your-app.com',
+    REACT_APP_API_ORIGIN: 'https://api.trip-emissions.app',
+    REACT_APP_WEB_ORIGIN: 'https://app.trip-emissions.app',
   },
   'test': {
     NODE_ENV: 'test',

@@ -14,7 +14,7 @@ export type AppNameProps = React.HTMLProps<HTMLSpanElement>
  */
 export const AppName = styled((props: AppNameProps) => (
   <span { ...props }>
-    Molecule
+    Trip Emissions
   </span>
 ))`
   text-transform: lowercase;
@@ -29,7 +29,7 @@ export type AppLinkProps = React.HTMLProps<HTMLAnchorElement> & {
  * A link to the root of the application.
  */
 export const AppLink = styled(({ store, onClick, children, ...props }: AppLinkProps) => (
-  <a href={process.env.REACT_APP_ID ? `index.html` : `https://www.molecule.dev`} { ...props }>
+  <a href={process.env.REACT_APP_ID ? `index.html` : `https://www.trip-emissions.app`} { ...props }>
     {children}
   </a>
 ))`

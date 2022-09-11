@@ -179,13 +179,6 @@ Update the `.env` and `.env-cmdrc.json` files with any known values.
 Any environment variables beginning with `REACT_APP` will be included in your application bundle, visible to the public. **Your app's environment variables should not include any private keys or credentials.**
 
 
-## Update the app name and domains
-
-The app is initially branded as "Molecule". You should change this to match your app.
-
-To quickly update the app's branding, use an IDE (e.g., VSCode) to find all instances of "molecule", "your-api", "your-app", and "Your App" within your app's project directory and replace each instance with your app's name, domain(s), email address(es), etc. It's probably a good idea to review each instance one by one.
-
-
 ## Update logos and icons
 
 It's easiest to start with an SVG (vector) image for your logo. If you do not already have a logo, you can find many premade free and open source vector images on the web.
@@ -226,7 +219,7 @@ To replace Arimo with your own choice of font:
 
 Molecule comes with a very generic Privacy Policy and Terms of Service so you have something to start from, but you will probably need to update them depending on your requirements. They exist in two separate locations.
 
-So that you can link to them from app stores via e.g., `https://app.your-app.com/privacy-policy.html`:
+So that you can link to them from app stores via e.g., `https://app.trip-emissions.app/privacy-policy.html`:
   - `{your-app}/public/privacy-policy.html`
   - `{your-app}/public/terms-of-service.html`
 
@@ -261,7 +254,7 @@ Code linting is a great way to keep your code consistently clean and readable, w
     }
     ```
 
-3. Create a `.vscode/tasks.json` file at the root of the `molecule-app` project directory if it does not already exist and add the following task:
+3. Create a `.vscode/tasks.json` file at the root of the `trip-emissions-app` project directory if it does not already exist and add the following task:
 
     ```json
     {
@@ -461,11 +454,11 @@ If you would rather use a different architecture, the existing code is designed 
 
   - `GENERATE_SOURCEMAP=false`
 
-  - `REACT_APP_URL_SCHEME=com.your-app.app`
+  - `REACT_APP_URL_SCHEME=app.trip-emissions.app`
 
-  - `REACT_APP_API_ORIGIN=https://api.your-app.com` - Use the same value you used for your API's `API_ORIGIN` environment variable. Also make sure this is set in the `production` section of `{your-app}/.env-cmdrc.json`.
+  - `REACT_APP_API_ORIGIN=https://api.trip-emissions.app` - Use the same value you used for your API's `API_ORIGIN` environment variable. Also make sure this is set in the `production` section of `{your-app}/.env-cmdrc.json`.
 
-  - `REACT_APP_WEB_ORIGIN=https://app.your-app.com`
+  - `REACT_APP_WEB_ORIGIN=https://app.trip-emissions.app`
 
 You'll set additional environment variables as needed when following the instructions for setting up features specific to your Molecule.
 
@@ -514,7 +507,7 @@ To add your subdomain(s) to Netlify's DNS:
 
 4. Choose the "CNAME" record type.
 
-5. If your desired subdomain is `api.your-app.com`, enter `api` for the name.
+5. If your desired subdomain is `api.trip-emissions.app`, enter `api` for the name.
 
 6. Your API host should provide a DNS target for you to use as the value.
 

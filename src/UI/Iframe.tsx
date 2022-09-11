@@ -91,8 +91,8 @@ export type IframeProps = React.HTMLProps<HTMLIFrameElement> & {
  *           <!DOCTYPE html>
  *           <html>
  *             <body>
- *               <a href='https://www.molecule.dev'>
- *                 Molecule.dev
+ *               <a href='https://www.trip-emissions.app'>
+ *                 Trip Emissions
  *               </a>
  *             </body>
  *           </html>

@@ -1,5 +1,5 @@
 {
-  "name": "Molecule App",
+  "name": "Trip Emissions App",
   "entryPoints": [
     "src/index.tsx"
   ]

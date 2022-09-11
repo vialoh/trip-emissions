@@ -18,7 +18,7 @@ export type DefaultProps = Parameters<typeof Container>[0] & {
  * or if not logged in, renders the `LogIn` component.
  */
 export const Default = ({ store, match, children, ...props }: DefaultProps): React.ReactElement => (
-  <Container store={store} title='Molecule' { ...props }>
+  <Container store={store} title='Trip Emissions' { ...props }>
     <Header store={store} { ...match?.params } />
 
     {(store.status === `initializing` || isReactSnap) ? (

@@ -20,7 +20,7 @@ export type InstructionsProps = React.HTMLProps<HTMLUListElement>
 export const Instructions = styled((props: InstructionsProps) => (
   <ul { ...props }>
     <li>
-      Open <a href='https://app.molecule.dev' target='_blank' rel='noopener noreferrer' onClick={handleAnchorClick}>app.molecule.dev</a> in any web browser on desktop or mobile which supports PWA installation. Popular browsers include Chrome, Brave, Edge, Samsung, and Mobile Safari.
+      Open <a href='https://app.trip-emissions.app' target='_blank' rel='noopener noreferrer' onClick={handleAnchorClick}>app.trip-emissions.app</a> in any web browser on desktop or mobile which supports PWA installation. Popular browsers include Chrome, Brave, Edge, Samsung, and Mobile Safari.
     </li>
 
     <li>
@@ -28,7 +28,7 @@ export const Instructions = styled((props: InstructionsProps) => (
     </li>
 
     <li>
-      After installation, you can use Molecule just like any other app!
+      After installation, you can use Trip Emissions just like any other app!
     </li>
   </ul>
 ))`
@@ -80,7 +80,7 @@ export const Install = styled((props: InstallProps) => (
     </h2>
 
     <p>
-      <span>Molecule is a progressive web application, which means </span>
+      <span>Trip Emissions is a progressive web application, which means </span>
       <span>you can install it instantly and always get the latest updates, fast.</span>
     </p>
 
