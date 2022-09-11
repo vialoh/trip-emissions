@@ -1,3 +1,34 @@
+# Trip Emissions
+
+Hello!
+
+This repository contains a frontend application for the Trip Emissions task.
+
+The initial app was scaffolded using a startup of mine, [Molecule.dev](https://www.molecule.dev), with the following frontend app selection:
+
+- App Language: **TypeScript**
+- Renderer: **React**
+- App Platforms: **Web**
+- UI Components: **Styled Components**
+- Themes: **Light, Dark**
+- App Deployment: **Netlify**
+- App Package Manager: **NPM**
+- App Documentation: **TypeDoc**
+- App Unit Testing: **Jest**
+- App Logging: **Loglevel**
+
+
+## Getting Started
+
+You'll need Node.js v16, then run the following in your terminal to install the dependencies and start the app in development mode:
+```
+npm i
+npm start
+```
+
+The rest of this README (below) is included with the scaffolded Molecule app by default and probably irrelevant to this particular task, but I will leave it in case you'd like to go through it.
+
+
 # About
 
 This app provides core functionality necessary for most user-oriented, data-driven applications:
