@@ -20,6 +20,13 @@ The initial app was scaffolded using a startup of mine, [Molecule.dev](https://w
 
 ## Getting Started
 
+First, clone this repository then navigate to it in your terminal.
+
+```
+git clone git@github.com:vialoh/trip-emissions.git
+cd trip-emissions
+```
+
 You'll need Node.js v16, then run the following in your terminal to install the dependencies and start the app in development mode:
 ```
 npm i
