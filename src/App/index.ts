@@ -8,6 +8,7 @@
 
 export * as Layouts from './Layouts'
 export * as Store from './Store'
+export * as Trip from './Trip'
 
 export * from './About'
 export * from './App'

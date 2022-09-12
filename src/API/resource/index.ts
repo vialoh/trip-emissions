@@ -4,4 +4,6 @@
  * @module
  */
 
+export * as trip from './trip'
+
 export * as types from './types'

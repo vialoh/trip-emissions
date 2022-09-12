@@ -2,7 +2,7 @@ import { useState, useMemo, Dispatch, SetStateAction } from 'react'
 import { DefaultTheme } from 'styled-components'
 import { themes } from '../../themes'
 
-const defaultTheme = Object.values(themes)[0] as DefaultTheme
+const defaultTheme = themes.light as DefaultTheme
 const storageKey = `selectedThemeKey`
 
 /**

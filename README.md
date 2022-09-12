@@ -26,7 +26,21 @@ npm i
 npm start
 ```
 
-The rest of this README (below) is included with the scaffolded Molecule app by default and probably irrelevant to this particular task, but I will leave it in case you'd like to go through it.
+To run the unit tests:
+```
+npm t
+```
+
+
+## Relevant Modules
+
+The most relevant modules to this particular task are as follows:
+- `src/API/resource/trip/*` - The `trip` API resource with the mocked `/trips` request.
+- `src/App/Layouts/Trips.tsx` - The default layout which renders the list of trips.
+- `src/App/Trip/List.tsx` - The list of trips using Styled Components to match the provided design.
+- `src/themes/*` - The current theme's colors, breakpoints, icons, etc.
+
+> **Note:** The rest of this README (below) is included with the scaffolded Molecule app by default and probably irrelevant to this particular task, but I will leave it in case you'd like to go through it.
 
 
 # About

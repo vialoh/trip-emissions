@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ca48a910-4b32-4ec1-abe9-f63be8ffeb07",
+    "createdAt": "2022-09-12T08:55:27.042Z",
+    "updatedAt": "2022-09-12T08:55:27.042Z",
+    "title": "European Quest",
+    "backgroundImageUrl": "/images/backgrounds/desert.jpg",
+    "summary": {
+      "countriesCount": 8,
+      "daysCount": 21,
+      "emissionsOffset": 810,
+      "averageRating": 4.7
+    }
+  },
+  {
+    "id": "0b2a33d9-e0c3-49ca-900c-58d002d46504",
+    "createdAt": "2022-09-12T08:55:27.042Z",
+    "updatedAt": "2022-09-12T08:55:27.042Z",
+    "title": "Autumn Roadtrip",
+    "backgroundImageUrl": "/images/backgrounds/road.jpg",
+    "summary": {
+      "countriesCount": 1,
+      "daysCount": 14,
+      "emissionsOffset": 3560,
+      "averageRating": 4.3
+    }
+  },
+  {
+    "id": "542d5e89-57ea-4ff1-a416-c1a693cb6ac4",
+    "createdAt": "2022-09-12T08:55:27.042Z",
+    "updatedAt": "2022-09-12T08:55:27.042Z",
+    "title": "Diving adventure in Egypt",
+    "backgroundImageUrl": "/images/backgrounds/underwater.jpg",
+    "summary": {
+      "countriesCount": 1,
+      "daysCount": 5,
+      "emissionsOffset": 6920,
+      "averageRating": 3.9
+    }
+  }
+]

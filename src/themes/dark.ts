@@ -12,6 +12,9 @@ export const dark: DefaultTheme = {
   colors: {
     text: `#e0e0e0`,
     grayText: `#aaaaaa`,
+    grayBackground: `#191919`,
+    grayBackgroundText: `#ffffff`,
+    grayBackgroundBorder: `#000000`,
     strongText: `#ffffff`,
     background: `#222222`,
     layerBackground: `#292929`,

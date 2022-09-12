@@ -35,7 +35,7 @@ export const App = ({ children }: AppProps): React.ReactElement => (
               <Route
                 path='/'
                 element={
-                  <Layouts.Default store={store} />
+                  <Layouts.Trips store={store} />
                 }
               />
 

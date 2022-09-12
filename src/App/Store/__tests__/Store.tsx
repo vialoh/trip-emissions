@@ -5,7 +5,7 @@ import * as types from '../types'
 import { version } from '../../../../package.json'
 import { themes } from '../../../themes'
 
-const defaultTheme = Object.values(themes)[0]
+const defaultTheme = themes.light
 
 it('renders', () => {
   const storeRef: { current: null | types.Store } = { current: null }

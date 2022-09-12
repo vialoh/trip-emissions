@@ -13,6 +13,9 @@ export const light: DefaultTheme = {
   colors: {
     text: `#333333`,
     grayText: `#808080`,
+    grayBackground: `#808080`,
+    grayBackgroundText: `#ffffff`,
+    grayBackgroundBorder: `#ffffff`,
     strongText: `#000000`,
     background: `#f6f6f6`,
     layerBackground: `#ffffff`,

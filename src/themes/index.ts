@@ -25,6 +25,9 @@ declare module 'styled-components' {
     colors: {
       text: string
       grayText: string
+      grayBackground: string
+      grayBackgroundText: string
+      grayBackgroundBorder: string
       strongText: string
       background: string
       layerBackground: string
